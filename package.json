@@ -1,0 +1,29 @@
+{
+  "name": "pi-enabled-models-filter",
+  "version": "1.0.0",
+  "description": "Enforce settings.json enabledModels as a hard model allowlist across every pi entry point — including --list-models and spawned subagents",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "pi",
+    "coding-agent",
+    "model-filter"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmmanuelARB/enabled-models-filter.git"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  }
+}
